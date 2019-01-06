@@ -1,0 +1,65 @@
+@import "variables";
+
+//------------------------------
+// BASIC RESET
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  //all elements will inherit from the body
+  //where we set box-sizing: border-box
+  box-sizing: inherit;
+}
+
+html {
+  /** FONT size and relative sizes calculation using rem
+  we want to enable user to set the fontsize but we also need
+  easy way to calculate out rem units. To achieve both the following
+  approach is advised. Default font size is 16px. So setting font size
+  to 100% we now that our starting size for 1rem = 16px. It would be easer
+  for us if we can set start to 10px so we can easily use decimals in rem,
+  for example 10px = 1rem => 1.65rem = 16.5px. To achive easy math we
+  can set font size to 10/16 = 62.5%. Note! when changing font size
+  the complete layout will change because all dimensions are set
+  in rem units.
+  */
+  //estimated 16px=1rem;
+  font-size: 100%;
+
+  @media screen and (max-width: $width-sm) {
+    font-size: 75%;
+  }
+
+  @media screen and (max-width: $width-xs) {
+    font-size: 50%;
+  }
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  font-family: $font-family;
+  color: var(--color-dark-1);
+  /*background-image: linear-gradient(to bottom right,
+    var(--color-primary-light), var(--color-primary-dark)
+  );*/
+  box-sizing: border-box;
+}
+
+.app {
+  &-root {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &-left-panel {
+    flex: 1;
+    background-color: var(--color-primary);
+  }
+  &-article {
+    flex: 7;
+    padding: 1rem 2rem;
+  }
+}
