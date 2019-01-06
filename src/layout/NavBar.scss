@@ -1,0 +1,76 @@
+/*
+  src: NavBar.scss
+  v0.0.1 Sep 2018
+  NOTE
+  This partial assumes that display flex is used for page layout.
+  The parent element should have following defined
+    display:flex;
+    flex-direction: column;
+*/
+
+.app-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  //border-top: var(--border-2);
+  //border-bottom: var(--border-2);
+
+  &-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.app-navbar .app-row {
+  padding: 0rem 1rem;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  width: 100%;
+}
+
+li.link-item {
+  list-style: none;
+
+  //border-right: var(--border-2);
+}
+/*
+li.link-item:first-child {
+  border-left: var(--border-2);
+}*/
+
+a.link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(---color-dark-2);
+  font-size: 0.925rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  opacity: 0.5;
+  padding: 1rem;
+  margin: 0.5rem 0rem;
+}
+
+a.link-item:hover:not(.selected) {
+  opacity: 0.7;
+  /*background-color: var(--color-accent-0)*/
+}
+
+a.link-item.selected {
+  color: var(--color-primary);
+  /*background-color: var(--color-accent-1);*/
+  opacity: 1;
+  background-color: var(--color-light-0);
+}
