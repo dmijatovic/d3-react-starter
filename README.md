@@ -8,7 +8,7 @@ Just run `npm install` and all libs mentioned below will be installed.
 
 ```bash
   # 1. install react and d3
-  npm i -s react react-dom d3
+  npm i -s react react-dom react-router-dom d3
   # 2. install webpack modules
   npm i -D webpack webpack-cli webpack-dev-server webpack-bundle-analyzer
   # 3a. install babel loaders - basics v7
@@ -140,7 +140,7 @@ Beside eslint we need to use react plugin eslint-plugin-react. For improving cod
     "parser": "babel-eslint",
     //parser ECMA version 7
     "parserOptions": {
-      "ecmaVersion": 7,
+      "ecmaVersion": 8,
       //using classes
       "sourceType": "module",
       //enable react features
