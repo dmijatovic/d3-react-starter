@@ -28,8 +28,9 @@
         "args": "none"
       }
     ],
-    "no-console": 1,
+    "no-console": "warn",
     "no-unexpected-multiline": "warn",
+    "no-debugger": "warn",
     "react/prop-types": [
       1,
       {
