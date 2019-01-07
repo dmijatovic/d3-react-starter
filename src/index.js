@@ -6,4 +6,7 @@ import Layout from './layout'
 
 import './styles/index.scss'
 
-ReactDOM.render(<Layout />, document.getElementById('react-root'))
+ReactDOM.render(
+  <Layout />,
+  document.getElementById('react-root')
+)

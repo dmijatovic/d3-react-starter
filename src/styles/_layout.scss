@@ -56,10 +56,35 @@ body {
 
   &-left-panel {
     flex: 1;
-    background-color: var(--color-primary);
+    background-color: var(--color-accent-1);
+    text-align: center;
   }
+
+  &-logo {
+    margin: 1rem 0rem 2rem 0.5rem;
+    height: 3rem;
+  }
+
   &-article {
     flex: 7;
     padding: 1rem 2rem;
+    //background-color: var(--color-primary);
+    //opacity: 0.5;
+
+    h1 {
+      font-size: 2rem;
+      padding: 1rem 0rem;
+      color: var(--color-accent-2);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      padding: 0rem 0rem 1rem;
+      color: var(--color-accent-2);
+    }
+
+    p {
+      color: var(--color-dark-1);
+    }
   }
 }
