@@ -6,7 +6,11 @@ class LeftPanel extends Component {
   render() {
     return (
       <aside className="app-left-panel">
-        <h1>Left panel</h1>
+        <img
+          className="app-logo"
+          src="img/dv4all_logo_v7_2016_hd.svg"
+          alt="logo"
+        />
         <NavBar />
       </aside>
     )
