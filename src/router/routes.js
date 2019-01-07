@@ -7,6 +7,8 @@ import HomePage from '../page/Home'
 import ErrorPage from '../page/Error'
 
 import Les1 from '../page/Les1'
+import Les2 from '../page/Les2'
+
 /**
  * Routes
  * @param {Array} route: Array of objects
@@ -34,6 +36,13 @@ const routes = [
     path: '/les1',
     component: Les1,
     label: 'Les 1',
+    type: 'component',
+    props: { exact: true }
+  },
+  {
+    path: '/les2',
+    component: Les2,
+    label: 'Les 2',
     type: 'component',
     props: { exact: true }
   },

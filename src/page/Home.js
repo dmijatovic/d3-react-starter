@@ -12,8 +12,10 @@ export default class Home extends React.Component {
   render() {
     return (
       <section>
-        <h1>Page title - HOME</h1>
-        <p>This is simple content</p>
+        <h1>Welcome</h1>
+        <p>
+          To D3 lessons integrated as part of React project.
+        </p>
       </section>
     )
   }

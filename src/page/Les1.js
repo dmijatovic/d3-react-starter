@@ -30,8 +30,7 @@ class Les1 extends Component {
   render() {
     return (
       <section className="article-content">
-        <h1>Les 1: Create SVG and basic share in it</h1>
-        <h2>This is subtitle</h2>
+        <h1>Les 1: Create SVG and basic shapes in it</h1>
         <p>
           Add shapes
           <br />
