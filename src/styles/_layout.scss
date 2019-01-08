@@ -45,6 +45,7 @@ body {
     var(--color-primary-light), var(--color-primary-dark)
   );*/
   box-sizing: border-box;
+  line-height: 1.5;
 }
 
 .app {
@@ -85,6 +86,12 @@ body {
 
     p {
       color: var(--color-dark-1);
+      padding: 1rem 0rem;
+    }
+
+    li {
+      padding: 0.25rem;
+      margin-left: 1rem;
     }
   }
 }

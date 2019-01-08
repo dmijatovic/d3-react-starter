@@ -8,6 +8,9 @@ import ErrorPage from '../page/Error'
 
 import Les1 from '../page/Les1'
 import Les2 from '../page/Les2'
+import Les3 from '../page/Les3'
+import Les4 from '../page/Les4'
+import Les5 from '../page/Les5'
 
 /**
  * Routes
@@ -43,6 +46,27 @@ const routes = [
     path: '/les2',
     component: Les2,
     label: 'Les 2',
+    type: 'component',
+    props: { exact: true }
+  },
+  {
+    path: '/les3',
+    component: Les3,
+    label: 'Les 3',
+    type: 'component',
+    props: { exact: true }
+  },
+  {
+    path: '/les4',
+    component: Les4,
+    label: 'Les 4',
+    type: 'component',
+    props: { exact: true }
+  },
+  {
+    path: '/les5',
+    component: Les5,
+    label: 'Les 5',
     type: 'component',
     props: { exact: true }
   },
