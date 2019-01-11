@@ -46,8 +46,6 @@ Webpack configuration is stored in webpack folder. Initially 2 separate def file
 
 **Note! Configuration is not 'shared' between files. When updating, please adjust/update the properties in both files where needed.**
 
-BTW: I have chosen here simpler approach with some code duplication above more complex setup (without code duplication).
-
 ## Folder Structure
 
 - **`assets`**: all asset files used like original logo and other images etc. Excel template for creating json files is also here.
@@ -76,8 +74,8 @@ Some plugins depend on the other webpack or third party plugins. In some cases i
 - postcss-loader depends on third party poscss module which in turns is collection of hondrets of modules that need to be 'pulled' separately. For example if you want to apply autoprefixing through webpack you need: postcss, postcss-loader and autoprefixer.
 - babel polyfill need to be project dependency as it is shipped with the project.
 - for IE 11 support you need additional polyfills to support fetch "whatwg-fetch" and include it in index.js as first import
-- for IE 11 you need also need to include @babel/polyfill
-- for IE 11 to have autoperfixer add values for all CSS variables you need to import index.scss file into index not index.js that imports other scss files; this seem not to work?
+- for IE 11 you also need to include @babel/polyfill
+- for IE 11 to have autoperfixer add values for all CSS variables you need to import index.scss file into index.scss not index.js that imports other scss files; this seem not to work?
 
 ```javascript
 //at the top of index.js file, before react add
