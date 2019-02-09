@@ -12,6 +12,7 @@ import Les3 from '../page/Les3'
 import Les4 from '../page/Les4'
 import Les5 from '../page/Les5'
 import Les6 from '../page/Les6'
+import Les7 from '../page/Les7'
 
 /**
  * Routes
@@ -75,6 +76,13 @@ const routes = [
     path: '/les6',
     component: Les6,
     label: 'Les 6',
+    type: 'component',
+    props: { exact: true }
+  },
+  {
+    path: '/les7',
+    component: Les7,
+    label: 'Les 7',
     type: 'component',
     props: { exact: true }
   },

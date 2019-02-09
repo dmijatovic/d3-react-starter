@@ -134,7 +134,7 @@ class Les6 extends Component {
     })
 
     //redraw bubbles
-    d3.interval(() => {
+    this.interval = d3.interval(() => {
       //debugger
       yId += 10
 
@@ -200,6 +200,10 @@ class Les6 extends Component {
       })
     })
     return clean
+  }
+  componentWillUnmount() {
+    //stop timer
+    this.interval.stop()
   }
 }
 
